@@ -1,0 +1,11 @@
+I want to try to map one embedding to another.
+
+http://arxiv.org/pdf/1309.4168.pdf
+
+Steps:
+1. get 2 corpuses with very different vocabulary (e.g. shakespeare, movie review)
+2. generate venn diagram of 2 sets of vocab (left, common, right)
+	a. make 3 files for each
+3. train 2 models
+4. write SGD code that figures out the mapping from embedding of common in left to embedding of common in right
+5. test that translation of embedding left to embedding right makes sense

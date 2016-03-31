@@ -1,0 +1,7 @@
+In exp1, I saw that the relationships between concepts do not map exactly linearly into directions in the w2v vector space. 
+
+However, in Mikolov and Le, they clearly showed a very simple linear mapping between multiple models. 
+
+I might have failed due to the fact that shakespeare is too different from just movie reviews.
+
+Going to instead experiment with the same corpus, but different initial weight initializations in the word2vec space. Hopefully this time, by mapping on only 10% of the vocabulary, i can get a near 1-1 mapping between most vectors.

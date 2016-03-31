@@ -7,6 +7,8 @@ from gensim.models import Word2Vec
 import sys
 import cPickle as pickle
 
+intersection_threshold = 1
+
 shakespeare_model = Word2Vec.load(sys.argv[1])
 imdb_model = Word2Vec.load(sys.argv[2])
 
@@ -14,7 +16,10 @@ intersection_set = []
 for line in open('../2venn/intersection.txt').read().split('\n'):
 	words = line.split()
 	if len(words) == 2:
-		intersection_set += [words[0]]
+		count = int(words[1])
+		if count >= intersection_threshold:
+			intersection_set += [words[0]]
+print "Using " + str(len(intersection_set)) + " words as intersection"
 
 X = []
 y = []

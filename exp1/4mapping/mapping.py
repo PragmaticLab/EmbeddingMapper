@@ -1,5 +1,7 @@
 """
 python mapping.py ../3model/shakespeare.w2v ../3model/imdb.w2v
+
+mapped_most_similar('venom')
 """
 from sklearn import linear_model
 import numpy as np 

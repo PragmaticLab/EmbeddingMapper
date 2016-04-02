@@ -1,0 +1,7 @@
+
+5k to 6k by frequency:
+mapping=512->512, sample=250, size=5, res=1.0
+
+
+
+

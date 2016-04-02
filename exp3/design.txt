@@ -1,0 +1,7 @@
+So I saw really good results in the last experiment, where in the same vocab space, I was able to map 512dim to 64dim with great accuracy.
+
+In this experiment, I want to repeat exp2, but do 512dim to 512 dim. 
+
+In the original Mikolov and Le paper, they did 4x dim to 1x dim because it resulted in the highest accuracy. I wonder if 1x dim to 1x dim would be less accurate.
+
+

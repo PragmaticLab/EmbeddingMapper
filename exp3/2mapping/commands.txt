@@ -1,0 +1,1 @@
+python ../../exp2/3mapping/linearregression.py ../../exp2/2model/imdb_left.w2v ../1model/imdb_right.w2v ../../exp2/1venn/intersection.txt lr.512to512.mapping

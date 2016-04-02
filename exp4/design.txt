@@ -1,0 +1,15 @@
+In exp3, I saw that to evaluate the quality of mapping between embeddings, I can just limit topnfilter to 1. So a mapping is only correct if it's an exact mapping. 
+
+In exp4, I will do transfer learning. In this steps:
+1. Train a model on x1 vocab
+2. Train a new model based on the model from step 1 on x2 (x1 in x2)
+3. Mapping between x1 to x2 (using 2000 vocab, where len(x1) > 2000)
+4. Test embedding on the other set (x1 - 2000 vocab)
+
+This time I will try 4 things:
+- 5000 -> 6000 by freq 
+- 5000 -> 6000 by random sample
+- 5000 -> 10000 by freq 
+- 5000 -> 10000 by random sample
+
+5000->6000 is a 20% increase; 5000->10000 is a 100% increase

@@ -1,5 +1,5 @@
 """
-python linearregression.py ../2model/imdb_left.w2v ../2model/imdb_right.w2v
+python linearregression.py ../2model/imdb_left.w2v ../2model/imdb_right.w2v ../1venn/intersection.txt lr.mapping
 """
 from sklearn import linear_model
 import numpy as np 
@@ -11,7 +11,7 @@ left_model = Word2Vec.load(sys.argv[1])
 right_model = Word2Vec.load(sys.argv[2])
 
 intersection_set = []
-for line in open('../1venn/intersection.txt').read().split('\n'):
+for line in open(sys.argv[3]).read().split('\n'):
 	words = line.split()
 	if len(words) == 2:
 		count = int(words[1])
@@ -32,4 +32,4 @@ regr.fit(X, y)
 print("Residual sum of squares: %.2f"
       % np.mean((regr.predict(X) - y) ** 2))
 print('Variance score: %.2f' % regr.score(X, y))
-pickle.dump(regr, open('lr.mapping', 'wb'))
+pickle.dump(regr, open(sys.argv[4], 'wb'))

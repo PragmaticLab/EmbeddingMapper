@@ -1,0 +1,1 @@
+python ../../exp2/2model/train.py ../../exp1/1cleanse/imdb.txt imdb_right.w2v 18 512 10

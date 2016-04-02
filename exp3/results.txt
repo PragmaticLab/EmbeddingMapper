@@ -1,0 +1,17 @@
+exp2
+mapping=512->64, sample=250, size=5, res=1.0
+mapping=512->64, sample=250, size=5, res=1.0
+
+
+exp3
+mapping=512->512, sample=250, size=5, res=1.0
+mapping=512->512, sample=250, size=5, res=1.0
+mapping=512->512, sample=250, size=5, res=1.0
+mapping=512->512, sample=250, size=3, res=1.0
+mapping=512->512, sample=250, size=3, res=1.0
+mapping=512->512, sample=250, size=4, res=1.0
+mapping=512->512, sample=250, size=4, res=1.0
+mapping=512->512, sample=250, size=1, res=1.0
+mapping=512->512, sample=250, size=1, res=1.0
+mapping=512->512, sample=250, size=2, res=1.0
+mapping=512->512, sample=250, size=2, res=1.0

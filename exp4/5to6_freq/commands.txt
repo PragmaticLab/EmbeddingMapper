@@ -1,0 +1,18 @@
+TO TRAIN:
+
+# left's cutoff is 160 -> 5k vocab
+python ../../exp2/2model/train.py ../../exp1/1cleanse/imdb.txt imdb_left.w2v 160 512 10
+
+# right's cutoff is 124 --> 6k vocab
+python ../../exp2/2model/train.py ../../exp1/1cleanse/imdb.txt imdb_right.w2v 124 512 10
+
+
+
+TO MAP:
+python ../../exp2/3mapping/linearregression.py imdb_left.w2v imdb_right.w2v intersection.txt lr.5kto6k.mapping
+
+
+
+TO EVAL:
+python -i ../../exp3/eval_mapping.py imdb_left.w2v imdb_right.w2v lr.5kto6k.mapping outer.txt 1
+

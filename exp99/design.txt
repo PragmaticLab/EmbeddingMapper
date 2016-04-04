@@ -1,0 +1,15 @@
+locked w2v syn0 weights for the existing vocab
+
+read: https://groups.google.com/forum/#!msg/gensim/Z9fr0B88X0w/w3BZqXq6HAAJ
+
+plan: 
+1. train a w2v model w/ like 5000 vocab
+2. instantiate a new model w/ 6000 vocab
+3. populate the 5000 vocab weights to the new model
+4. lock the 5000 vocab weights in the new model
+5. train again
+
+5000 vocab --> 159 cutoff
+6000 vocab --> 124 cutoff
+
+
